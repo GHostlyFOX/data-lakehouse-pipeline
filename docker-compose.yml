@@ -8,11 +8,18 @@
 #   4) Airflow: http://localhost:8080  (airflow / airflow)
 #
 # В Dremio добавь Source типа "Nessie":
-#   Nessie endpoint: http://nessie:19120/api/v1
-#   S3 endpoint:     http://minio:9000
-#   Root path:       s3://warehouse/iceberg
-#   Access key/secret: admin / password
-#   Включи path-style access и выключи SSL
+#   General:
+#     Nessie endpoint: http://nessie:19120/api/v1
+#     Auth: None
+#   Storage:
+#     Root path:       s3://warehouse/iceberg
+#     Access key:      admin
+#     Secret key:      password
+#   Advanced Options / Connection Properties:
+#     fs.s3a.endpoint:           minio:9000
+#     fs.s3a.path.style.access:  true
+#     fs.s3a.connection.ssl.enabled: false
+#     dremio.s3.compat:          true
 
 name: lakehouse
 
