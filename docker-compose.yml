@@ -9,10 +9,10 @@
 #
 # В Dremio добавь Source типа "Nessie":
 #   General:
-#     Nessie endpoint: http://nessie:19120/api/v1
+#     Nessie endpoint: http://nessie:19120/api/v2
 #     Auth: None
 #   Storage:
-#     Root path:       s3://warehouse/iceberg
+#     Root path:       /warehouse/iceberg
 #     Access key:      admin
 #     Secret key:      password
 #   Advanced Options / Connection Properties:

@@ -5,11 +5,11 @@
 To successfully connect Dremio to MinIO using Nessie as a catalog, use the following configuration when adding a new "Nessie" source in Dremio:
 
 ### General
-*   **Nessie endpoint:** `http://nessie:19120/api/v1`
+*   **Nessie endpoint:** `http://nessie:19120/api/v2`
 *   **Auth:** `None`
 
 ### Storage
-*   **Root path:** `s3://warehouse/iceberg`
+*   **Root path:** `/warehouse/iceberg`
 *   **Access key:** `admin`
 *   **Secret key:** `password`
 
